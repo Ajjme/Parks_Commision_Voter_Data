@@ -18,37 +18,82 @@ ccc_voter_location_info <- read_tsv("../../Voter_data_analysis/Contra_Costa/MVMJ
 hist_ccc_voter_data <- read_tsv("../../Voter_data_analysis/Contra_Costa/MVMJ004_Hist_20240711_104944.txt") %>% 
   clean_names() %>% 
   mutate(dt_election_date = mdy(dt_election_date)) %>% 
-#filterd to just counted ballots
-  filter(sz_counted_flag == "Yes",
-         #filter to Year
-         year(dt_election_date) >= 2016) %>% 
- # Create count if DEM Vote
-  groupby(l_voter_unique_id) %>% 
-  #I want most recent precient 
-  # Percent vote by mail 
-  #most recent party
-  #count of times voted
-  mutate()
-#join on ID
-ccc_wide_voter <- full_join(ccc_voter_location_info, hist_ccc_voter_data, by = "l_voter_unique_id")
+  filter(year(dt_election_date) >= 2016)
+
+# List of election dates
+election_dates <- as.Date(c("2021-09-14", "2022-04-05", "2022-11-08", "2020-05-05", 
+                            "2021-05-04", "2016-06-07", "2020-11-03", "2022-06-07", 
+                            "2016-11-08", "2018-03-06", "2018-06-05", "2018-11-06", 
+                            "2019-05-07", "2019-11-05", "2020-03-03", "2024-03-05", 
+                            "2023-03-07", "2024-05-07"))
+
+# Summarizing the dataset
+summarized_data <- hist_ccc_voter_data %>%
+  group_by(l_voter_unique_id) %>%
+  summarize(
+    most_recent_precinct = s_voting_precinct[which.max(dt_election_date)],
+    percent_voted_by_mail = sum(sz_voting_method %in% c("Voted by Mail Ballot", "Voted by Absentee Ballot")) / n(),
+    percent_voted_by_primary = sum(s_elec_type_desc %in% c("Special Vacated Primary", "Primary")) / n(),
+    most_recent_party = sz_party_name[which.max(dt_election_date)],
+    count_times_voted = n(),
+    #number of times voted divided by oportunies
+    voted_in_2024_primary = ifelse(any(dt_election_date == as.Date("2024-03-05")), "Yes", "No"),
+    voted_in_2020_general = ifelse(any(dt_election_date == as.Date("2020-11-03")), "Yes", "No"),
+    party_changed = ifelse(n_distinct(na.omit(sz_party_name)) > 1, "Yes", "No"),
+    changed_to_democratic = ifelse(n_distinct(na.omit(sz_party_name)) > 1 & most_recent_party == "Democratic", "Yes", "No"),
+    changed_to_green = ifelse(n_distinct(na.omit(sz_party_name)) > 1 & most_recent_party == "Green", "Yes", "No"),
+    voting_opportunities = sum(election_dates >= min(dt_election_date)),
+    voted_vs_opportunities = count_times_voted / sum(election_dates >= min(dt_election_date))
+    
+  )
+
 
 PrecinctList <- read_tsv("../../Voter_data_analysis/Contra_Costa/PrecinctList_6000RP2.txt") %>% 
-  clean_names()
+  clean_names() 
 
-# Steps
-#Filter Hist by Precinct
-#Gather the top five elections that match Alameda 2024 - 2012
-# only counted are in this file pull party and voting method and unique voter ID
-#Pivot wider then join to Location data set
 
-#Filter by Precinct again (Make list of applicable)
+ccc_wide_voter <- full_join(ccc_voter_location_info, summarized_data, by = "l_voter_unique_id") %>%
+  #will check this
+  filter(s_precinct_id %in% PrecinctList$s_precinct_id) %>% 
+  select(
+    "l_voter_unique_id"         ,
+    name_prefix = "s_voter_title"         ,
+    name_last = "sz_name_last"             ,
+    name_first = "sz_name_first"         ,
 
-#Standardize column names
-#Select from locational data so matches alameda
-#Identification
-[6] "name_prefix"                                                             
-[7] "name_last"                                                               
-[8] "name_first"
+    
+    "s_gender"                 ,
+    "sz_situs_address"      ,
+    city = "sz_situs_city"            ,
+    state = "s_situs_state"         ,
+    zip = "s_situs_zip"              ,
+    "s_house_num"           ,
+    "s_unit_abbr"              ,
+    "s_unit_num"            ,
+    "sz_street_name"           ,
+    "s_street_suffix"       ,
+    
+    "sz_mail_address1"         ,"sz_mail_address2"      ,
+    "sz_mail_address3"         ,"sz_mail_address4"      ,
+    "sz_mail_zip"              ,"sz_phone"              ,
+    "sz_email_address"         ,
+    
+    "dt_birth_date"         ,
+    "s_birth_place"            ,
+    "sz_language_name"      ,
+    dt_last_update_dt
+    "sz_precinct_name"      ,
+    "s_precinct_id"            ,
+    #calculated
+    "most_recent_precinct"     ,"percent_voted_by_mail" ,
+    "percent_voted_by_primary" ,"most_recent_party"     ,
+    "count_times_voted"        ,"voted_in_2024_primary" ,
+    "voted_in_2020_general"    ,"party_changed"         ,
+    "changed_to_democratic"    ,"changed_to_green"      ,
+    "voting_opportunities"     ,"voted_vs_opportunities")
+
+# TO CHANGE NAMES TOO
+
 house_number,
 [18] "apartment_number"                                                        
 [19] "city"                                                                    
@@ -78,7 +123,3 @@ house_number,
 [41] "mail_zip"                                                                
 [42] "mail_country"
 [46] "email" 
-
-
-date_counts <- hist_ccc_voter_data %>%
-  count(sz_election_desc)

@@ -2,17 +2,15 @@ source("./02_Scripts/000_Init.R")
 ### Inputs------------------
 #may have to change downloaded name
 ala_voter_data <- read_tsv("../../Voter_data_analysis/Alameda/MultiPurposeVoterFile-EBRPD-District-2.txt") %>% 
-  clean_names() %>% 
-  filter(status == "A",
-         )
-select(voter_id, 
+  clean_names() %>%
+  select(voter_id, 
                                                                      
        
        #Identification
        [6] "name_prefix"                                                             
        [7] "name_last"                                                               
        [8] "name_first"
-       house_number,
+            house_number,
        [18] "apartment_number"                                                        
        [19] "city"                                                                    
        [20] "state"                                                                   
