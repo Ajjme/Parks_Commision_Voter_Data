@@ -62,7 +62,7 @@ ccc_wide_voter <- full_join(ccc_voter_location_info, summarized_data, by = "l_vo
     name_first = "sz_name_first"         ,
 
     
-    "s_gender"                 ,
+    gender = "s_gender"                 ,
     "sz_situs_address"      ,
     city = "sz_situs_city"            ,
     state = "s_situs_state"         ,
@@ -76,14 +76,14 @@ ccc_wide_voter <- full_join(ccc_voter_location_info, summarized_data, by = "l_vo
     "sz_mail_address1"         ,"sz_mail_address2"      ,
     "sz_mail_address3"         ,"sz_mail_address4"      ,
     "sz_mail_zip"              ,"sz_phone"              ,
-    "sz_email_address"         ,
+    email  = "sz_email_address"         ,
     
-    "dt_birth_date"         ,
-    "s_birth_place"            ,
-    "sz_language_name"      ,
-    dt_last_update_dt
-    "sz_precinct_name"      ,
-    "s_precinct_id"            ,
+    birth_date = "dt_birth_date"         ,
+    birth_place = "s_birth_place"            ,
+    language = "sz_language_name"      ,
+    ltd = dt_last_update_dt,
+    precinct_name = "sz_precinct_name"      ,
+    #"s_precinct_id"            ,
     #calculated
     "most_recent_precinct"     ,"percent_voted_by_mail" ,
     "percent_voted_by_primary" ,"most_recent_party"     ,
