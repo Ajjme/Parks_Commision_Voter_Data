@@ -9,11 +9,17 @@ source("./02_Scripts/000_Init.R")
 # has "registration_date"   
 #"birth_date"           "birth_place"          "party_name"  "language"
 #vbm_program_status vote by mail status
-# use distric_name_#
+# use distric_name_#s
 #pull info on voting method
 
 ccc_voter_location_info <- read_tsv("../../Voter_data_analysis/Contra_Costa/MVMJ004_6000RP2.txt") %>% 
-  clean_names()
+  clean_names() %>%
+  # Create a new column 'recently_updated'
+  mutate(
+    recently_updated = if_else(
+      grepl("2024", dt_reg_date), 
+      "Yes",
+      "No" ))
 
 hist_ccc_voter_data <- read_tsv("../../Voter_data_analysis/Contra_Costa/MVMJ004_Hist_20240711_104944.txt") %>% 
   clean_names() %>% 
@@ -56,7 +62,7 @@ ccc_wide_voter <- full_join(ccc_voter_location_info, summarized_data, by = "l_vo
   #will check this
   filter(s_precinct_id %in% PrecinctList$s_precinct_id) %>% 
   select(
-    "l_voter_unique_id"         ,
+    voter_id = "l_voter_unique_id"         ,
     name_prefix = "s_voter_title"         ,
     name_last = "sz_name_last"             ,
     name_first = "sz_name_first"         ,
@@ -64,18 +70,19 @@ ccc_wide_voter <- full_join(ccc_voter_location_info, summarized_data, by = "l_vo
     
     gender = "s_gender"                 ,
     "sz_situs_address"      ,
-    city = "sz_situs_city"            ,
-    state = "s_situs_state"         ,
-    zip = "s_situs_zip"              ,
-    "s_house_num"           ,
+    mail_city = "sz_situs_city"            ,
+    mail_state = "s_situs_state"         ,
+    mail_zip = "s_situs_zip"              ,
+    house_number = "s_house_num"           ,
     "s_unit_abbr"              ,
-    "s_unit_num"            ,
-    "sz_street_name"           ,
+    apartment_number = "s_unit_num"            ,
+    mail_street = "sz_street_name"           ,
     "s_street_suffix"       ,
     
     "sz_mail_address1"         ,"sz_mail_address2"      ,
     "sz_mail_address3"         ,"sz_mail_address4"      ,
-    "sz_mail_zip"              ,"sz_phone"              ,
+    "sz_mail_zip"              ,
+    phone_1 = "sz_phone"              ,
     email  = "sz_email_address"         ,
     
     birth_date = "dt_birth_date"         ,
@@ -86,40 +93,43 @@ ccc_wide_voter <- full_join(ccc_voter_location_info, summarized_data, by = "l_vo
     #"s_precinct_id"            ,
     #calculated
     "most_recent_precinct"     ,"percent_voted_by_mail" ,
-    "percent_voted_by_primary" ,"most_recent_party"     ,
+    "percent_voted_by_primary" ,party = "most_recent_party"     ,
     "count_times_voted"        ,"voted_in_2024_primary" ,
     "voted_in_2020_general"    ,"party_changed"         ,
     "changed_to_democratic"    ,"changed_to_green"      ,
-    "voting_opportunities"     ,"voted_vs_opportunities")
+    "voting_opportunities"     ,"voted_vs_opportunities",
+    recently_updated)
 
+
+saveRDS(ccc_wide_voter, file = "contra_costa_processed_voter_data.rds")
 # TO CHANGE NAMES TOO
-
-house_number,
-[18] "apartment_number"                                                        
-[19] "city"                                                                    
-[20] "state"                                                                   
-[21] "zip"                                                                     
-[22] "precinct"
-[29] "phone_1"                                                                 
-[30] "phone_2" 
-
-#Vote filters
-[5] "last_voted"
-[26] "party"                                                                   
-[27] "reg_date"
-[31] "military"                                                                
-[32] "gender"                                                                  
-[33] "pav"  
-[35] "birth_place"                                                             
-[36] "birth_date" 
-[43] "ltd"        #last transaction date                                                             
-[44] "language"
-[53] "precinct_name"
-
-#Address
-[38] "mail_street"                                                             
-[39] "mail_city"                                                               
-[40] "mail_state"                                                              
-[41] "mail_zip"                                                                
-[42] "mail_country"
-[46] "email" 
+# 
+# house_number,
+# [18] "apartment_number"                                                        
+# [19] "city"                                                                    
+# [20] "state"                                                                   
+# [21] "zip"                                                                     
+# [22] "precinct"
+# [29] "phone_1"                                                                 
+# [30] "phone_2" 
+# 
+# #Vote filters
+# [5] "last_voted"
+# [26] "party"                                                                   
+# [27] "reg_date"
+# [31] "military"                                                                
+# [32] "gender"                                                                  
+# [33] "pav"  
+# [35] "birth_place"                                                             
+# [36] "birth_date" 
+# [43] "ltd"        #last transaction date                                                             
+# [44] "language"
+# [53] "precinct_name"
+# 
+# #Address
+# [38] "mail_street"                                                             
+# [39] "mail_city"                                                               
+# [40] "mail_state"                                                              
+# [41] "mail_zip"                                                                
+# [42] "mail_country"
+# [46] "email" 

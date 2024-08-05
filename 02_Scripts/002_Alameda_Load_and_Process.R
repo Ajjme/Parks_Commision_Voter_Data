@@ -4,15 +4,18 @@ source("./02_Scripts/000_Init.R")
 ala_voter_data <- read_tsv("../../Voter_data_analysis/Alameda/MultiPurposeVoterFile-EBRPD-District-2.txt") %>% 
   clean_names() %>% 
   select(voter_id, 
-         most_recent_precinct = "precinct",
+         most_recent_precinct = precinct,
          "name_prefix"        ,                                                    
          "name_last"          ,                                                    
          "name_first"         ,
+         
+         #address info 1 not used
          house_number,
-         "apartment_number"   ,                                                    
-         "city"               ,                                                    
-         "state"              ,                                                    
-         "zip"                ,                                                    
+         "apartment_number"   ,
+         # "city"               ,                                                    
+         # "state"              ,                                                    
+         # "zip"                , 
+         
          "precinct"           ,
          "phone_1"            ,                                                    
          "phone_2" ,
@@ -21,6 +24,7 @@ ala_voter_data <- read_tsv("../../Voter_data_analysis/Alameda/MultiPurposeVoterF
          "last_voted",
          "party"        ,                                                          
          "reg_date",
+         reg_date_original,
          "military"     ,                                                          
          "gender"       ,                                                          
          "pav"  ,
@@ -30,12 +34,13 @@ ala_voter_data <- read_tsv("../../Voter_data_analysis/Alameda/MultiPurposeVoterF
          "language",
          "precinct_name",
          
-         #Address
+         #Address 2? (this section will be used)
          "mail_street"  ,                                                          
          "mail_city"    ,                                                          
          "mail_state"   ,                                                          
          "mail_zip"     ,                                                          
          "mail_country",
+         
          "email" ,
          "x06_03_05_2024_2024_presidential_primary_election_3183"                  ,
          "x08_11_08_2022_november_8_2022_statewide_general_election_3180"          ,
@@ -61,7 +66,7 @@ df_clean <- df %>%
       starts_with("x"),
       .fns = list(
         eligibility = ~ ifelse(
-          as.Date(reg_date, format = "%m/%d/%Y") <= as.Date(str_extract(cur_column(), "\\d{2}_\\d{2}_\\d{4}"), format = "%m_%d_%Y"),
+          as.Date(reg_date_original, format = "%m/%d/%Y") <= as.Date(str_extract(cur_column(), "\\d{2}_\\d{2}_\\d{4}"), format = "%m_%d_%Y"),
           ., # Retain the original value if eligible
           "not eligible" # Mark as "not eligible" if not eligible
         )
@@ -83,17 +88,30 @@ df_clean <- df %>%
 
 df_calc <- df_clean %>%
     mutate(
-      percent_voted_by_mail = rowMeans(across(starts_with("x"), ~ . == "A") / 
-                                         rowSums(across(starts_with("x"), ~ . %in% c("A", "V")))),
+      percent_voted_by_mail    = rowMeans(across(ends_with("eligibility"), ~ . == "A") / 
+                                         rowSums(across(ends_with("eligibility"), ~ . %in% c("A", "V", "N", "not eligible", NA )))),
       percent_voted_by_primary = rowMeans(across(contains("primary"), ~ . %in% c("A", "V") & str_detect(cur_column(), "primary"))),
-      count_times_voted = rowSums(across(starts_with("x"), ~ . %in% c("A", "V"))),
-      voted_in_2024_primary = ifelse(df_clean[["x06_03_05_2024_2024_presidential_primary_election_3183_eligibility"]] %in% c("A", "V"), "Y", "N"),
-      voted_in_2020_general = ifelse(df_clean[["x30_11_03_2020_2020_presidential_election_3130_eligibility"]] %in% c("A", "V"), "Y", "N")
-    )
+      count_times_voted        = rowSums(across(starts_with("x"), ~ . %in% c("A", "V"))),
+      voting_opportunities     = rowSums(across(starts_with("x"), ~ . %in% c("A", "V", "N"))),
+      voted_vs_opportunities   = count_times_voted/voting_opportunities,
+      voted_in_2024_primary    = ifelse(df_clean[["x06_03_05_2024_2024_presidential_primary_election_3183_eligibility"]] %in% c("A", "V"), "Yes", "No"),
+      voted_in_2020_general    = ifelse(df_clean[["x30_11_03_2020_2020_presidential_election_3130_eligibility"]] %in% c("A", "V"), "Yes", "No"),
+      percent_voted_by_mail    = ifelse(
+        is.na(percent_voted_by_mail) , 
+        0, (percent_voted_by_mail*10))
+    )%>%
+  # Create a new column 'recently_updated'
+  mutate(
+    recently_updated = if_else(
+      grepl("2024", reg_date) | grepl("2024", ltd),
+      "Yes",
+      "No"
+    ))
   #add column fro recent register?
 
 
 
+saveRDS(df_calc, file = "alameda_processed_voter_data.rds")
                       
         # Does A mean Absentee ballet, N mean not voted and V means voted? A) A Does mean Absentee (vote by mail),  N means did not vote, and V means voted.
 
