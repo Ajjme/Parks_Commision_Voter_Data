@@ -78,7 +78,7 @@ df_clean <- df %>%
   select(        -x06_03_05_2024_2024_presidential_primary_election_3183                ,
                  -x08_11_08_2022_november_8_2022_statewide_general_election_3180          ,
                  -x14_06_07_2022_june_7_2022_statewide_direct_primary_election_3162       ,
-                 -x24_09_14_2021_september_14_2021_california_gubernatorial_recall_el_3165,
+                # -x24_09_14_2021_september_14_2021_california_gubernatorial_recall_el_3165,
                  -x30_11_03_2020_2020_presidential_election_3130                         ,
                  -x36_03_03_2020_2020_presidential_primary_election_3001                 ,
                  -x47_11_06_2018_2018_statewide_general_election_2841                    ,
@@ -88,6 +88,7 @@ df_clean <- df %>%
 
 df_calc <- df_clean %>%
     mutate(
+      #check to make sure 
       percent_voted_by_mail    = rowMeans(across(ends_with("eligibility"), ~ . == "A") / 
                                          rowSums(across(ends_with("eligibility"), ~ . %in% c("A", "V", "N", "not eligible", NA )))),
       percent_voted_by_primary = rowMeans(across(contains("primary"), ~ . %in% c("A", "V") & str_detect(cur_column(), "primary"))),
