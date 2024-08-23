@@ -6,10 +6,13 @@ ala_data <- readRDS("alameda_processed_voter_data.rds") %>%
          mail_zip = as.character(mail_zip),
          phone_1 = as.character(phone_1))
 
+#summary_by_mail_ala <- count_unique_voters(ala_data, percent_voted_by_mail)
+
 ccc_data <- readRDS("contra_costa_processed_voter_data.rds") %>%
   mutate(most_recent_precinct = as.character(most_recent_precinct),
          mail_zip = as.character(mail_zip),
          phone_1 = as.character(phone_1))
+#summary_by_mail_ccc <- count_unique_voters(ccc_data, percent_voted_by_mail)
 
 EBRPD_district_2_voter_data <- bind_rows(ala_data, ccc_data) %>% 
   mutate(
@@ -60,7 +63,7 @@ EBRPD_district_2_voter_data <- bind_rows(ala_data, ccc_data) %>%
          -"x36_03_03_2020_2020_presidential_primary_election_3001_eligibility"                  ,
          -"x47_11_06_2018_2018_statewide_general_election_2841_eligibility"                     ,
          -"x48_06_05_2018_2018_statewide_direct_primary_election_2818_eligibility"              ,
-         -"x52_11_08_2016_2016_general_election_127_eligibility"                                ,
+         "x52_11_08_2016_2016_general_election_127_eligibility"                                ,
          -"x53_06_07_2016_presidential_primary_election_126_eligibility" ,
          -"sz_situs_address"                                                                    ,
          -"s_unit_abbr"                                                                         ,
