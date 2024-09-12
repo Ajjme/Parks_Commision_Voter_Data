@@ -78,9 +78,10 @@ first_mailer <- EBRPD_district_2_voter_data %>%
 
     #      recently_updated == "Yes",
     # count_times_voted >= "2"
-    voted_in_2020_general == "Yes",
-    voted_in_2016_general == "Yes",
-    voted_in_2024_primary == "Yes"
+    voted_in_2020_general == "Yes" &#, 88,459
+    # voted_in_2016_general == "Yes",
+     voted_in_2024_primary == "Yes" &
+      voted_in_2016_general == "Yes" #75,400 add people that voted in 2020 genral and not in 2024 - as or
          ) %>%
   select(-c(#percent_voted_by_mail, 
             percent_voted_by_primary, count_times_voted,
@@ -89,7 +90,8 @@ first_mailer <- EBRPD_district_2_voter_data %>%
             changed_to_democratic, changed_to_green, 
             #percent_voted_by_mail_group,
             voted_vs_opportunities_group, percent_voted_by_primary_group,
-            birth_year, birth_year_group, party_category, last_voted, party,
+            #birth_year, birth_year_group, party_category,
+            last_voted, #party,
             reg_date, reg_date_original, military, gender, pav, birth_place,
             birth_date, ltd, language,
             house_number, apartment_number)) %>%
@@ -99,12 +101,28 @@ first_mailer <- EBRPD_district_2_voter_data %>%
                  mail_street, 
                  mail_city, 
                  sep = " ")
-  ) %>%
-  distinct(full_address, .keep_all = TRUE)
+  ) %>% 
+  #filter(!is.na(phone_1)) %>% 
+  select("voter_id"              ,                                                 
+         "most_recent_precinct"  ,                                                 
+         "name_prefix"           ,                                                 
+         "name_last"             ,                                                 
+         "name_first"            ,                                                 
+         full_address,                                                
+         #"phone_1"               ,
+         email,
+          #"party"                ,
+          birth_year_group, party_category, percent_voted_by_mail_group) #%>% 
+  # mutate(clean_phone = gsub("[^0-9]", "", phone_1) %>%  # Remove non-numeric characters
+  #                 str_sub(-10))
+# %>%
+#   distinct(full_address, .keep_all = TRUE)
   
 summary_by_mail <- count_unique_voters(first_mailer, percent_voted_by_mail_group)
    
-saveRDS(first_mailer, file = "first_mailer.rds")
+saveRDS(first_mailer, file = "social_media_batch_2.rds")
+
+write.csv(first_mailer,"social_media_batch_2.csv")
 #Include when voted did they vote by mail
 
 # goal best 50,000
