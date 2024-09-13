@@ -1,0 +1,419 @@
+"","full_address","name_first","name_last","last_voted","precinct_name","voting_opportunities","latitude","longitude"
+"1","897, Acalanes, CA, 94549","Linda","Livesey",NA,"Lafayette110",8,37.8861162207837,-122.15690522461
+"2","850, Acalanes, CA, 94549","Eric","Anderson",NA,"Lafayette110",8,37.8837715498925,-122.159138642908
+"3","858, Acalanes, CA, 94549","Diana","Tharp",NA,"Lafayette110",8,37.8840976900035,-122.158811379992
+"4","910, Acalanes, CA, 94549","Jocelyn","Baleglickman",NA,"Lafayette110",10,37.88687,-122.155917
+"5","833, Acalanes, CA, 94549","Jackson","Aris-Dumas",NA,"Lafayette110",8,37.8828960664619,-122.159344313331
+"6","863, Acalanes, CA, 94549","Isabel","Toldi",NA,"Lafayette110",10,37.884228,-122.158511
+"7","867, Acalanes, CA, 94549","Melissa","O'Farrell",NA,"Lafayette110",8,37.8843204279759,-122.158248439803
+"8","999, Almanor, CA, 94549","Xochilena","Driscoll",NA,"Lafayette109",8,37.892285,-122.109281
+"9","1003, Almanor, CA, 94549","Chelsea","Turner",NA,"Lafayette109",10,37.8925179083666,-122.109426157475
+"10","972, Almanor, CA, 94549","Justin","Truax",NA,"Lafayette109",8,37.8923186122449,-122.109069204082
+"11","980, Almanor, CA, 94549","Lisa","Michelucci",NA,"Lafayette109",8,37.8923313469388,-122.10907744898
+"12","915, Anita, CA, 94549","Robert","Marty",NA,"Lafayette108",8,37.8904085209656,-122.100167390897
+"13","867, Avalon, CA, 94549","Mimoli","Uehara",NA,"Lafayette107",10,37.8868423469388,-122.115862510204
+"14","838, Avalon, CA, 94549","Ian","Lee",NA,"Lafayette107",8,37.8861567755102,-122.115647081633
+"15","3303, Berta, CA, 94549","Rachel","Morris",NA,"Lafayette109",8,37.8941038675304,-122.103463609534
+"16","3336, Betty, CA, 94549","Jennalee","Curtis",NA,"Lafayette106",8,37.8656238255089,-122.103686097274
+"17","3350, Betty, CA, 94549","Kai","Weyland",NA,"Lafayette106",10,37.8661752210969,-122.104673977364
+"18","3358, Betty, CA, 94549","Michelle","Sister",NA,"Lafayette106",8,37.8662756969418,-122.104934107437
+"19","3305, Betty, CA, 94549","Joshua","Galla",NA,"Lafayette106",8,37.8646431251453,-122.101525911109
+"20","3309, Betty, CA, 94549","Melissa","Emerson",NA,"Lafayette106",10,37.8647533081709,-122.101824800824
+"21","3345, Betty, CA, 94549","Sarah","Murray",NA,"Lafayette106",8,37.865889,-122.104434
+"22","3349, Betty, CA, 94549","Guang","Deng",NA,"Lafayette106",10,37.8660136710956,-122.104762073563
+"23","3365, Betty, CA, 94549","Sara","Greene",NA,"Lafayette106",8,37.866230108925,-122.10528608405
+"24","3608, Bickerstaff, CA, 94549","Alexis","Keenangist",NA,"Lafayette109",10,37.8901648200382,-122.124110279607
+"25","3610, Bickerstaff, CA, 94549","Debra","Sheppard",NA,"Lafayette109",8,37.8901533874782,-122.124227871653
+"26","3626, Bickerstaff, CA, 94549","Sarah","Murphree",NA,"Lafayette109",8,37.890023,-122.125361
+"27","3615, Bickerstaff, CA, 94549","Kelly","Johnston",NA,"Lafayette109",10,37.8899700054746,-122.124373535008
+"28","3619, Bickerstaff, CA, 94549","Eva","Gould",NA,"Lafayette109",8,37.8899495255934,-122.124588953018
+"29","3625, Bickerstaff, CA, 94549","Tom","Zaiderman",NA,"Lafayette109",10,37.8899132045733,-122.124911495886
+"30","3637, Bickerstaff, CA, 94549","Alexis","Kisner",NA,"Lafayette110",8,37.88947196875,-122.1262685
+"31","883, Birdhaven, CA, 94549","Austin","Hughes",NA,"Lafayette107",8,37.8855020349898,-122.111451004396
+"32","887, Birdhaven, CA, 94549","Carly","Gatzert",NA,"Lafayette107",10,37.8855791712503,-122.111452368346
+"33","3580, Boyer, CA, 94549","Gabriela","Lawrence-Puett",NA,"Lafayette109",10,37.8848640814754,-122.123452720713
+"34","3688, Boyer, CA, 94549","Jennifere","Doherty Rogers",NA,"Lafayette109",17,37.8853393481476,-122.123248556936
+"35","3525, Boyer, CA, 94549","Ann","Golden",NA,"Lafayette109",10,37.8858861094529,-122.121757897386
+"36","844, Broadmoor, CA, 94549","Dara","Bahri",NA,"Lafayette107",10,37.88403704944,-122.107712378072
+"37","833, Broadmoor, CA, 94549","Margaret","Wolpert",NA,"Lafayette107",8,37.8838429555763,-122.108030910077
+"38","1, Burton Vista, CA, 94549","Amber","Dixon",NA,"Lafayette107",8,37.878504,-122.102654
+"39","5, Burton Vista, CA, 94549","Kerry","Kilmer",NA,"Lafayette107",10,37.878478902428,-122.102582591859
+"40","1130, Camino Vallecito, CA, 94549","Chloe","Venn",NA,"Lafayette105",8,37.8997221691298,-122.147581446399
+"41","1136, Camino Vallecito, CA, 94549","Paul","Davidian",NA,"Lafayette105",10,37.8999569100296,-122.147265169976
+"42","1140, Camino Vallecito, CA, 94549","Andrea","Baudler",NA,"Lafayette105",8,37.9001644667036,-122.147098112165
+"43","1162, Camino Vallecito, CA, 94549","Axelia","Meissner",NA,"Lafayette105",8,37.90129,-122.147566
+"44","3336, Carlyle, CA, 94549","Amanda","Alessandria",NA,"Lafayette107",8,37.8791174636163,-122.106899911363
+"45","999, Carol, CA, 94549","Christian","Ramsey",NA,"Lafayette109",10,37.8909745101428,-122.102336761009
+"46","972, Carol, CA, 94549","Rebecca","Adams",NA,"Lafayette108",8,37.8894481181729,-122.100741179971
+"47","1024, Carol, CA, 94549","Celeste","Velasquez",NA,"Lafayette108",10,37.8921098150616,-122.10266521581
+"48","1076, Carol, CA, 94549","Isaiah","Taylor",NA,"Lafayette108",8,37.894614823657,-122.102545813834
+"49","954, Carol, CA, 94549","John","Kalil",NA,"Lafayette108",8,37.8892034944948,-122.100157026937
+"50","950, Carol, CA, 94549","Lucas","Woods",NA,"Lafayette108",8,37.8891633496271,-122.1000219942
+"51","1033, Cavallero, CA, 94549","Eileen","Meredith",NA,"Lafayette109",10,37.8933951030907,-122.108919421999
+"52","905, Colina, CA, 94549","Elizabeth","Welch",NA,"Lafayette109",8,37.8882334081633,-122.119102959184
+"53","911, Colina, CA, 94549","Anthony","Romero",NA,"Lafayette109",8,37.8882190204082,-122.119102897959
+"54","412, Corte Rinaldo, CA, 94549","Linda","Lam",NA,"Lafayette110",10,37.8823582593705,-122.156448425799
+"55","24, Cosso, CA, 94549","Olivia","Moore",NA,"Lafayette105",8,37.9052077890403,-122.144135546761
+"56","3966, Cowan, CA, 94549","Nicholas","Ousman",NA,"Lafayette105",10,37.9024020675014,-122.150517383642
+"57","3959, Cowan, CA, 94549","Sally","Dunne",NA,"Lafayette105",10,37.9022070315457,-122.1501817245
+"58","3716, Crestmont, CA, 94549","Kathleen","Wark",NA,"Lafayette105",8,37.899491,-122.131764283923
+"59","894, Dewing, CA, 94549","Anthony","Ratner",NA,"Lafayette109",17,37.8873379643128,-122.122852689719
+"60","904, Dewing, CA, 94549","Krzysztof","Sobieszczanski",NA,"Lafayette109",8,37.8874784396211,-122.122845257163
+"61","920, Dewing, CA, 94549","Pamela","Pace",NA,"Lafayette109",10,37.8880984613213,-122.122786792423
+"62","942, Dewing, CA, 94549","Brianna","Bower",NA,"Lafayette109",17,37.8896918800152,-122.123254890151
+"63","944, Dewing, CA, 94549","Lloyd","Nelson",NA,"Lafayette109",10,37.8898032527363,-122.123281899526
+"64","950, Dewing, CA, 94549","Tracy","Hu",NA,"Lafayette109",8,37.890265,-122.1234
+"65","1000, Dewing, CA, 94549","Michael","Bookman",NA,"Lafayette109",10,37.8906681,-122.123618
+"66","891, Dewing, CA, 94549","Sydney","Bell",NA,"Lafayette109",8,37.887367819007,-122.123063321746
+"67","895, Dewing, CA, 94549","Alexandra","Betancourtdealmeidalopes",NA,"Lafayette109",8,37.8874303451604,-122.123060013484
+"68","919, Dewing, CA, 94549","Jason","Tola",NA,"Lafayette109",8,37.8882335920902,-122.123010219153
+"69","929, Dewing, CA, 94549","George","Dennis",NA,"Lafayette109",10,37.8885256158996,-122.123138225438
+"70","939, Dewing, CA, 94549","Parya","Bahrani",NA,"Lafayette109",8,37.8889845,-122.1232865
+"71","949, Dewing, CA, 94549","Cierra","Hamilton",NA,"Lafayette109",10,37.8893723207748,-122.123393545956
+"72","24, Diablo, CA, 94549","Samir","Ayoub",NA,"Lafayette110",10,37.9045458343299,-122.15483916567
+"73","17, Diablo, CA, 94549","Sydney","Christensen",NA,"Lafayette110",10,37.9045663892037,-122.154571684942
+"74","31, Diablo, CA, 94549","Margaret","Heiskell",NA,"Lafayette110",10,37.9044013065973,-122.154692093468
+"75","5, Dollis Park, CA, 94549","Morgan","Spahos",NA,"Lafayette112",8,37.8978425363513,-122.124783995201
+"76","1026, Dolores, CA, 94549","Allison","Kelley",NA,"Lafayette105",10,37.8933462683427,-122.129464618314
+"77","1045, Dolores, CA, 94549","Isabella","Gonzalez",NA,"Lafayette105",8,37.8939280961595,-122.130217623168
+"78","964, Dolores, CA, 94549","Joanne","Blake",NA,"Lafayette109",8,37.8913906069248,-122.128235329869
+"79","668, Doreen, CA, 94549","Jennifer","Gleeson",NA,"Lafayette107",11,37.8775437755102,-122.107692571429
+"80","676, Doreen, CA, 94549","Austin","Poole",NA,"Lafayette107",10,37.8775521020408,-122.107686285714
+"81","669, Doreen, CA, 94549","Kiara","Kunnes",NA,"Lafayette107",10,37.8774587755102,-122.107514571429
+"82","1014, Dyer, CA, 94549","Sydney","Louie",NA,"Lafayette109",10,37.8940723031233,-122.104414572121
+"83","1011, Dyer, CA, 94549","Marlo","Winquist",NA,"Lafayette109",8,37.8937092523307,-122.104499007205
+"84","650, Evelyn, CA, 94549","Jacqueline","Caulfield",NA,"Lafayette107",8,37.8729071458139,-122.101460174483
+"85","651, Evelyn, CA, 94549","Daniel","Yarlett",NA,"Lafayette107",14,37.8729265441193,-122.101675300089
+"86","3286, Fairholm, CA, 94549","Jaspinder","Gahlla",NA,"Lafayette111",8,37.9108710612245,-122.101827897959
+"87","3290, Fairholm, CA, 94549","Alexander","Gilberd",NA,"Lafayette111",8,37.9108540408163,-122.101858265306
+"88","3291, Fairholm, CA, 94549","Willow","Hallager",NA,"Lafayette111",10,37.9107200408163,-122.101738265306
+"89","3295, Fairholm, CA, 94549","Jenny","Romin",NA,"Lafayette111",8,37.9107030204082,-122.101768632653
+"90","4055, Fiora, CA, 94549","William","Ho",NA,"Lafayette110",8,37.8879736888643,-122.155695502293
+"91","949, Foye, CA, 94549","Patty","Lee",NA,"Lafayette109",17,37.8898975768991,-122.110795158339
+"92","953, Foye, CA, 94549","Jin","Heo",NA,"Lafayette109",8,37.8899666826743,-122.110825118754
+"93","3273, Glenside, CA, 94549","Brian","Petkovich",NA,"Lafayette107",11,37.879725,-122.100925
+"94","3288, Glenside, CA, 94549","Kyle","Tooker",NA,"Lafayette107",8,37.8799651596227,-122.101071663774
+"95","3292, Glenside, CA, 94549","Andrew","Shellen",NA,"Lafayette107",8,37.8799977703479,-122.101144410776
+"96","634, Glorietta, CA, 94549","Nadezhda","Kotova",NA,"Lafayette110",8,37.8854023239651,-122.155942168298
+"97","650, Glorietta, CA, 94549","Heather","Wagner",NA,"Lafayette110",10,37.8854288466473,-122.155949649054
+"98","670, Glorietta, CA, 94549","Sharon","Abdilla",NA,"Lafayette110",17,37.885462,-122.155959
+"99","667, Glorietta, CA, 94549","Ren","Dunwoodie",NA,"Lafayette110",10,37.8853369176086,-122.156147326467
+"100","3414, Goyak, CA, 94549","Shannon","Ohleyer",NA,"Lafayette111",10,37.9125197957287,-122.109777154176
+"101","3417, Goyak, CA, 94549","Chandani","Patel",NA,"Lafayette111",10,37.9126571438402,-122.110391515187
+"102","4, Greenvalley, CA, 94549","John","Lomond",NA,"Lafayette111",10,37.9139537239767,-122.102104948538
+"103","5, Greenvalley, CA, 94549","Howli","Pfeiffer",NA,"Lafayette111",10,37.9140949857446,-122.102222732614
+"104","7, Greenvalley, CA, 94549","Justin","Lee",NA,"Lafayette111",10,37.914109478617,-122.102204098921
+"105","3465, Hamlin, CA, 94549","Erin","Pulkownik",NA,"Lafayette107",10,37.8817914473377,-122.113948997689
+"106","3519, Hamlin, CA, 94549","Katherine","Brown",NA,"Lafayette107",8,37.8822645963827,-122.116065083189
+"107","3527, Hamlin, CA, 94549","Gregory","Nichols",NA,"Lafayette107",8,37.8823155700066,-122.116340761641
+"108","4038, Happy Valley, CA, 94549","Daniel","Gong",NA,"Lafayette105",10,37.907158022221,-122.154921591797
+"109","4052, Happy Valley, CA, 94549","Susan","Afsari",NA,"Lafayette105",8,37.907481,-122.156039
+"110","4080, Happy Valley, CA, 94549","Alexander","Bustamante",NA,"Lafayette105",10,37.9083952918166,-122.158497260254
+"111","4116, Happy Valley, CA, 94549","Zachary","Havens",NA,"Lafayette105",10,37.9095986265209,-122.159833942253
+"112","3653, Happy Valley, CA, 94549","Ian","Lundgren",NA,"Lafayette105",8,37.8959996616855,-122.126186575615
+"113","3657, Happy Valley, CA, 94549","Darren","Vanblois",NA,"Lafayette105",10,37.895996006902,-122.126282818248
+"114","3661, Happy Valley, CA, 94549","David","Azalde",NA,"Lafayette105",8,37.895991,-122.126379
+"115","3603, Happy Valley, CA, 94549","Mary","Ryan",NA,"Lafayette109",10,37.8913567739587,-122.125769234645
+"116","3648, Happy Valley, CA, 94549","Matthew","Hess",NA,"Lafayette112",8,37.8962638826547,-122.126101523418
+"117","3656, Happy Valley, CA, 94549","Matthew","Johnson",NA,"Lafayette112",8,37.8961777905915,-122.126251837634
+"118","3684, Happy Valley, CA, 94549","Christopher","Moyes",NA,"Lafayette112",8,37.8987749387413,-122.129798826338
+"119","3796, Happy Valley, CA, 94549","Robert","Little",NA,"Lafayette112",10,37.9028940986656,-122.137747098666
+"120","3812, Happy Valley, CA, 94549","Katrina","Breuner",NA,"Lafayette112",8,37.90386,-122.139057
+"121","3814, Happy Valley, CA, 94549","Chris","Logger",NA,"Lafayette112",8,37.9039568571651,-122.139190178602
+"122","3832, Happy Valley, CA, 94549","Eli","Olson",NA,"Lafayette112",10,37.9048324605978,-122.140385944013
+"123","3983, Happy Valley, CA, 94549","Alexis","Glavin",NA,"Lafayette105",10,37.906294869898,-122.150972982554
+"124","4045, Happy Valley, CA, 94549","Asher","Lanzone",NA,"Lafayette105",10,37.9072109496731,-122.155631263212
+"125","4051, Happy Valley, CA, 94549","Huma","Dadachanji",NA,"Lafayette105",10,37.9072647144408,-122.155825829703
+"126","4055, Happy Valley, CA, 94549","Caroline","Roche",NA,"Lafayette105",8,37.9072935517611,-122.155957248453
+"127","4087, Happy Valley, CA, 94549","Keith","Coulston",NA,"Lafayette105",8,37.9080939569105,-122.15827848632
+"128","942, Happy Valley, CA, 94549","James","Rimes",NA,"Lafayette105",8,37.8937352311956,-122.126764331101
+"129","948, Happy Valley, CA, 94549","Sean","Fernandez",NA,"Lafayette105",8,37.8937241992327,-122.126810646325
+"130","3692, Hastings, CA, 94549","Anna","Dissman",NA,"Lafayette112",10,37.9016550118774,-122.127563886452
+"131","920, Hawthorne, CA, 94549","Harshith","Avula",NA,"Lafayette109",8,37.8889298442391,-122.105295858871
+"132","953, Hawthorne, CA, 94549","Julien","Vollering",NA,"Lafayette109",8,37.888953,-122.105618
+"133","963, Hawthorne, CA, 94549","Cynthia","Dillon",NA,"Lafayette109",10,37.8885650630432,-122.106179318044
+"134","3348, Helen, CA, 94549","Charmae","Wang",NA,"Lafayette106",10,37.8665804968263,-122.10308633064
+"135","3319, Helen, CA, 94549","Krissa","Schwartz",NA,"Lafayette106",8,37.8661046410436,-122.10275053569
+"136","918, Hough, CA, 94549","Callan","O'Brien",NA,"Lafayette109",8,37.8885580923986,-122.121461529151
+"137","938, Hough, CA, 94549","Hekia","Bodwitch",NA,"Lafayette109",8,37.889245,-122.12145
+"138","940, Hough, CA, 94549","Milad","Koochakkhani",NA,"Lafayette109",10,37.8892615526274,-122.121437342108
+"139","917, Hough, CA, 94549","William","Whalen",NA,"Lafayette109",17,37.8886145191351,-122.12169004776
+"140","919, Hough, CA, 94549","Marilyn","Newhouse",NA,"Lafayette109",10,37.888681284605,-122.121690267384
+"141","939, Hough, CA, 94549","Sienna","Cornish",NA,"Lafayette109",10,37.8893466640132,-122.12163048762
+"142","1006, Howard Hills, CA, 94549","Danika","Harrison",NA,"Lafayette105",10,37.891968,-122.14054
+"143","962, Janet, CA, 94549","Sharon","Hood",NA,"Lafayette108",10,37.892521,-122.101258
+"144","929, Janet, CA, 94549","Patrick","Williams",NA,"Lafayette108",8,37.8910227631975,-122.100741066921
+"145","3269, Judith, CA, 94549","Brielle","Kroman",NA,"Lafayette108",8,37.8928998789294,-122.100020593864
+"146","3360, Kincheloe, CA, 94549","Eric","Anduri",NA,"Lafayette111",8,37.9143516922379,-122.105157990427
+"147","3460, La Caminita, CA, 94549","Jack","Copeland",NA,"Lafayette111",10,37.9194140598357,-122.111079608444
+"148","3435, La Caminita, CA, 94549","Emma","Horner",NA,"Lafayette111",8,37.9197062240218,-122.109620965377
+"149","80, Lafayette, CA, 94549","Michele","Thompson",NA,"Lafayette109",8,37.8902775180342,-122.120856758499
+"150","215, Lafayette, CA, 94549","Teresa","King",NA,"Lafayette109",10,37.8900613598937,-122.121629297291
+"151","3318, Las Huertas, CA, 94549","Isabel","Elings",NA,"Lafayette107",10,37.8828208,-122.104847
+"152","3394, Las Huertas, CA, 94549","Norah","Bessette-Denwood",NA,"Lafayette107",10,37.882321,-122.105342
+"153","816, Las Trampas, CA, 94549","Frank","Cisneros",NA,"Lafayette107",8,37.8848263853924,-122.102104189827
+"154","819, Las Trampas, CA, 94549","Alexander","Olson",NA,"Lafayette107",8,37.8847252215277,-122.102324988024
+"155","831, Las Trampas, CA, 94549","Ian","Archer",NA,"Lafayette109",8,37.8855737205691,-122.1016803455
+"156","3914, Leroy, CA, 94549","Brenda","Wong",NA,"Lafayette105",10,37.898224566596,-122.146859304439
+"157","3920, Leroy, CA, 94549","Spencer","Tompkins",NA,"Lafayette105",8,37.8982505778599,-122.147003993784
+"158","3882, Los Arabis, CA, 94549","Sara","Ronan",NA,"Lafayette105",8,37.8956386681968,-122.14386617961
+"159","3890, Los Arabis, CA, 94549","Paige","Caron",NA,"Lafayette105",8,37.8954381036864,-122.144304497264
+"160","3954, Los Arabis, CA, 94549","Hamta","Jafari",NA,"Lafayette105",10,37.895398,-122.147546
+"161","3980, Los Arabis, CA, 94549","Lauren","Williams",NA,"Lafayette105",8,37.8953800538295,-122.150185577445
+"162","4004, Los Arabis, CA, 94549","Michael","Franklin",NA,"Lafayette105",8,37.8958457093931,-122.155868724209
+"163","3883, Los Arabis, CA, 94549","Terry","Fracchiafivey",NA,"Lafayette105",8,37.8952999147138,-122.144169395706
+"164","4067, Los Arabis, CA, 94549","Eden","Bottenfield",NA,"Lafayette105",8,37.8959,-122.157058
+"165","4073, Los Arabis, CA, 94549","Charles","Schlatter",NA,"Lafayette105",17,37.8960653696184,-122.157516978685
+"166","4131, Los Arabis, CA, 94549","Willem","Maarse",NA,"Lafayette105",10,37.8968297477015,-122.159885073847
+"167","3340, Lucille, CA, 94549","Neeta","Mistry",NA,"Lafayette106",10,37.8649225911939,-122.104458251447
+"168","3360, Lucille, CA, 94549","Elias","Barakos",NA,"Lafayette106",8,37.8657522757842,-122.106737089972
+"169","3374, Lucille, CA, 94549","Daniela","Moroz",NA,"Lafayette106",10,37.8661412343419,-122.108115185084
+"170","3301, Lucille, CA, 94549","Steven","Craig",NA,"Lafayette106",10,37.863744,-122.101707
+"171","3303, Lucille, CA, 94549","Suzanne","Brennan",NA,"Lafayette106",10,37.8638030278438,-122.101870262378
+"172","3323, Lucille, CA, 94549","Jolie","Mak",NA,"Lafayette106",10,37.8643946421993,-122.103502402332
+"173","3349, Lucille, CA, 94549","Sean","Vanderheyden",NA,"Lafayette106",10,37.8654526297648,-122.106421214445
+"174","3328, Lucille, CA, 94549","Matthew","Wakefield",NA,"Lafayette106",10,37.8646137072077,-122.103606778417
+"175","3334, Lucille, CA, 94549","Timothy","Rochford",NA,"Lafayette106",8,37.864768155857,-122.104032512518
+"176","3352, Lucille, CA, 94549","Connor","Jackman",NA,"Lafayette106",10,37.8653707585947,-122.105690363324
+"177","3313, Lucille, CA, 94549","Michael","Samaniego",NA,"Lafayette106",10,37.8640986155708,-122.102686411833
+"178","1, Maloyan, CA, 94549","Joseph","Satterley",NA,"Lafayette105",10,37.8946354,-122.1471326
+"179","5, Maloyan, CA, 94549","Jordan","Pratt",NA,"Lafayette105",8,37.8945463108981,-122.146992205928
+"180","4044, Marianne, CA, 94549","Jake","Dohemann",NA,"Lafayette110",8,37.8896811491951,-122.154846757844
+"181","4056, Marianne, CA, 94549","Daming","Chen",NA,"Lafayette110",8,37.8897142941611,-122.155053203632
+"182","3238, Marlene, CA, 94549","Joan","Candray",NA,"Lafayette108",10,37.8940944507358,-122.101081731606
+"183","3252, Marlene, CA, 94549","Megan","Dukes",NA,"Lafayette108",8,37.8940812930706,-122.101410673234
+"184","3254, Marlene, CA, 94549","Ronell","Jones",NA,"Lafayette108",8,37.8940794134042,-122.101457664895
+"185","3256, Marlene, CA, 94549","Samuel","Tunick",NA,"Lafayette108",10,37.8940775337377,-122.101504656556
+"186","3264, Marlene, CA, 94549","Aaron","Moe",NA,"Lafayette108",10,37.8940927663379,-122.101691801249
+"187","3276, Marlene, CA, 94549","Julia","Coppola",NA,"Lafayette108",8,37.8941243608257,-122.101972202328
+"188","3290, Marlene, CA, 94549","Leomar","Cuartelon",NA,"Lafayette108",8,37.8941689223394,-122.102298303139
+"189","3235, Marlene, CA, 94549","Joanne","Fong",NA,"Lafayette108",8,37.8939214172272,-122.100923904118
+"190","3253, Marlene, CA, 94549","Callista","Asuncion",NA,"Lafayette108",8,37.8939069431837,-122.101376643069
+"191","3257, Marlene, CA, 94549","Nicole","Ladner",NA,"Lafayette108",8,37.8939052790526,-122.101477489412
+"192","3261, Marlene, CA, 94549","Thomas","Harrison",NA,"Lafayette108",8,37.8939068366416,-122.101578165906
+"193","3265, Marlene, CA, 94549","Martelli","Dimaurodwinell",NA,"Lafayette108",10,37.8939190952949,-122.101678278241
+"194","3275, Marlene, CA, 94549","Belem","Avila",NA,"Lafayette108",8,37.8939497419281,-122.101928559079
+"195","3285, Marlene, CA, 94549","Jared","James",NA,"Lafayette108",10,37.8939800685993,-122.102178877648
+"196","3293, Marlene, CA, 94549","Ann","Baker",NA,"Lafayette108",8,37.8940115303681,-122.102378043444
+"197","862, Mcellen, CA, 94549","Charlotte","Keohane",NA,"Lafayette107",10,37.8853142465844,-122.11024041029
+"198","3370, Mcgraw, CA, 94549","Christopher","Rogers",NA,"Lafayette111",8,37.9161936030964,-122.1086798774
+"199","3351, Mcgraw, CA, 94549","Helena","Pratt Holmberg",NA,"Lafayette111",10,37.915294,-122.105311
+"200","3363, Mcgraw, CA, 94549","Riley","Adams",NA,"Lafayette111",10,37.9145062829548,-122.107203898678
+"201","3365, Mcgraw, CA, 94549","Mariko","Zelin",NA,"Lafayette111",8,37.9143135641874,-122.107313133712
+"202","3367, Mcgraw, CA, 94549","Alexandra","Alvira",NA,"Lafayette111",8,37.9141933324925,-122.107500546417
+"203","3304, Mildred, CA, 94549","Eduardo","Akins",NA,"Lafayette106",8,37.8632562128769,-122.102343455497
+"204","3308, Mildred, CA, 94549","Robert","Mooring",NA,"Lafayette106",10,37.8633610301036,-122.102630055869
+"205","3324, Mildred, CA, 94549","Savannah","Decarlo",NA,"Lafayette106",10,37.8637796138788,-122.103776708232
+"206","3362, Mildred, CA, 94549","Jennifer","Cabral",NA,"Lafayette106",10,37.8648779183057,-122.107004722557
+"207","3364, Mildred, CA, 94549","Kendra","Budig",NA,"Lafayette106",8,37.8649428738612,-122.107205926351
+"208","3384, Mildred, CA, 94549","Brooke","Ginnard",NA,"Lafayette106",10,37.8654965450909,-122.109126710857
+"209","3301, Mildred, CA, 94549","David","Sniderman",NA,"Lafayette106",10,37.863002,-122.102144
+"210","3309, Mildred, CA, 94549","Aywon","Nguyen",NA,"Lafayette106",10,37.8631985145993,-122.102683771376
+"211","3317, Mildred, CA, 94549","Scott","Murphy",NA,"Lafayette106",8,37.863395495354,-122.103223372911
+"212","3369, Mildred, CA, 94549","Kathryn","Jerabek",NA,"Lafayette106",10,37.8651532433638,-122.108370395503
+"213","1190, Monticello, CA, 94549","Georgia","Carpenter",NA,"Lafayette112",10,37.9023089082274,-122.122783631293
+"214","1200, Monticello, CA, 94549","Merritt","Lum",NA,"Lafayette112",8,37.9025638969536,-122.122789
+"215","1232, Monticello, CA, 94549","Elham","Assadipourfard",NA,"Lafayette112",8,37.9033739693746,-122.122713641273
+"216","1199, Monticello, CA, 94549","Jordan","Starr",NA,"Lafayette112",8,37.9026249378195,-122.123001
+"217","793, Moraga, CA, 94549","Azurede","Wilkins",NA,"Lafayette109",10,37.8806686268515,-122.122488086568
+"218","797, Moraga, CA, 94549","David","Evans",NA,"Lafayette109",10,37.8806865419578,-122.121920626226
+"219","841, Moraga, CA, 94549","Arlo","Evans",NA,"Lafayette109",10,37.8840459635373,-122.118719430124
+"220","662, Moraga, CA, 94549","Julius","Speyer",NA,"Lafayette110",8,37.8748753984991,-122.126920096324
+"221","3306, Moraga, CA, 94549","Athan","Hadjimarkos",NA,"Lafayette109",8,37.889797772006,-122.102082155358
+"222","3312, Moraga, CA, 94549","Charles","Nelson",NA,"Lafayette109",8,37.8899944804751,-122.103092374131
+"223","3368, Moraga, CA, 94549","Emily","Walters",NA,"Lafayette109",8,37.891058,-122.106854
+"224","3416, Moraga, CA, 94549","Michael","Savino",NA,"Lafayette109",10,37.8913593780503,-122.110362994813
+"225","3436, Moraga, CA, 94549","Ariel","Feigenbaum",NA,"Lafayette109",8,37.8909215,-122.111702
+"226","3464, Moraga, CA, 94549","Jennifer","Coletta",NA,"Lafayette109",8,37.8909042537048,-122.114529463504
+"227","3482, Moraga, CA, 94549","Scarlette","McCullough",NA,"Lafayette109",10,37.8904676237731,-122.115415256003
+"228","3512, Moraga, CA, 94549","Hosseinali","Salkhordeh-Haghighi",NA,"Lafayette109",8,37.8902597186528,-122.116887543351
+"229","3309, Moraga, CA, 94549","Suzanne","McHugh",NA,"Lafayette109",8,37.889694,-122.102603
+"230","3343, Moraga, CA, 94549","Liat","Bycel",NA,"Lafayette109",10,37.8906184392312,-122.105188127927
+"231","3345, Moraga, CA, 94549","Kendall","Li",NA,"Lafayette109",8,37.8906590710098,-122.105345729978
+"232","3473, Moraga, CA, 94549","Bronwen","Russell",NA,"Lafayette109",8,37.8907233170514,-122.114577486891
+"233","3511, Moraga, CA, 94549","Pearl","Yuen",NA,"Lafayette109",8,37.8900975418174,-122.116839955113
+"234","3513, Moraga, CA, 94549","Mary","Dicig",NA,"Lafayette109",8,37.8900956646569,-122.116872546972
+"235","3763, Mosswood, CA, 94549","Ali","Akin",NA,"Lafayette110",10,37.8872106175251,-122.135152003623
+"236","3791, Mosswood, CA, 94549","Holly","Neber",NA,"Lafayette110",8,37.8869894011072,-122.13681527618
+"237","3793, Mosswood, CA, 94549","Ann","Ly",NA,"Lafayette110",8,37.8869861894422,-122.136906685107
+"238","3700, Mosswood, CA, 94549","Angela","Michel",NA,"Lafayette110",8,37.8881141861305,-122.132473851017
+"239","3704, Mosswood, CA, 94549","Richard","Quinonez",NA,"Lafayette110",10,37.888123877027,-122.132614345945
+"240","3732, Mosswood, CA, 94549","Joseph","Curley",NA,"Lafayette110",8,37.8878858890599,-122.133565288853
+"241","3758, Mosswood, CA, 94549","Joan","Monroe",NA,"Lafayette110",8,37.8874329163461,-122.134974329387
+"242","3784, Mosswood, CA, 94549","Nellie","Wakileh",NA,"Lafayette110",10,37.8871648392034,-122.136619428092
+"243","3648, Mosswood, CA, 94549","Jonathan","Redman",NA,"Lafayette110",10,37.8881263611004,-122.130648828821
+"244","3366, Mt Diablo, CA, 94549","Irina","Kostko",NA,"Lafayette109",8,37.8944195780138,-122.107819050506
+"245","3428, Mt Diablo, CA, 94549","Beverly","Malcolm",NA,"Lafayette109",17,37.8910705,-122.1256971
+"246","3686, Mt Diablo, CA, 94549","Douglas","White",NA,"Lafayette110",8,37.8910705,-122.1256971
+"247","3661, Mt Diablo, CA, 94549","Mulumebet","Worku",NA,"Lafayette110",10,37.890686,-122.127879
+"248","3663, Mt Diablo, CA, 94549","Miranda","Dershimer",NA,"Lafayette110",10,37.8906575468141,-122.127999049099
+"249","3713, Mt Diablo, CA, 94549","Gail","Pohlman",NA,"Lafayette110",8,37.8896151091692,-122.130895528395
+"250","NA, Mt Diablo, CA, 94549","Colleen","Niesen",NA,"Lafayette110",8,37.8910705,-122.1256971
+"251","3235, Mt Diablo, CA, 94549","Emma","Godfrey",NA,"Lafayette108",10,37.896270577277,-122.102098664551
+"252","3255, Mt Diablo, CA, 94549","Courtney","Elario",NA,"Lafayette108",10,37.8961620014908,-122.10241293786
+"253","3263, Mt Diablo, CA, 94549","Paula","Gruendl",NA,"Lafayette108",8,37.8961179291091,-122.102538428168
+"254","3279, Mt Diablo, CA, 94549","Kanika","Patel",NA,"Lafayette108",10,37.8960298779444,-122.102789441575
+"255","4007, Natasha, CA, 94549","Aurora","Le",NA,"Lafayette105",8,37.8968047065273,-122.152402908765
+"256","4035, Natasha, CA, 94549","Sophia","Russell",NA,"Lafayette105",17,37.8970415864897,-122.153497764831
+"257","3670, Nordstrom, CA, 94549","Anne","Thiselton-Dyer",NA,"Lafayette112",10,37.8996171808087,-122.12752972434
+"258","676, Old Jonas Hill, CA, 94549","Joshua","Groth",NA,"Lafayette107",8,37.8765102850595,-122.122390248755
+"259","754, Old Jonas Hill, CA, 94549","Isabel","Rurka",NA,"Lafayette107",8,37.8787350777766,-122.121527978251
+"260","776, Old Jonas Hill, CA, 94549","Olivia","Morgan",NA,"Lafayette107",8,37.8794577176215,-122.121126067107
+"261","721, Old Jonas Hill, CA, 94549","Terrance","Depuy",NA,"Lafayette107",8,37.8775231271432,-122.122429422365
+"262","727, Old Jonas Hill, CA, 94549","Maile","Broad",NA,"Lafayette107",8,37.8776658393173,-122.1223478191
+"263","737, Old Jonas Hill, CA, 94549","Natalia","Pedder",NA,"Lafayette107",8,37.8779054896018,-122.122214977809
+"264","755, Old Jonas Hill, CA, 94549","Caroline","Phipps",NA,"Lafayette107",10,37.8786061463232,-122.121825812672
+"265","765, Old Jonas Hill, CA, 94549","Natalie","Seiler",NA,"Lafayette107",8,37.8793312210572,-122.12142334981
+"266","26, Old Millstone, CA, 94549","Elizabeth","Guthrie",NA,"Lafayette107",8,37.8840054217473,-122.104332785984
+"267","1153, Oleander, CA, 94549","Myrtle","Simon",NA,"Lafayette105",10,37.9004534285714,-122.153427857143
+"268","3379, Oswego, CA, 94549","Olga","Galchenko",NA,"Lafayette107",8,37.8815912772506,-122.10682621885
+"269","3830, Palo Alto, CA, 94549","Morgan","Quinn",NA,"Lafayette105",8,37.9014050929038,-122.13887927163
+"270","3834, Palo Alto, CA, 94549","Sarah","Langdon",NA,"Lafayette105",10,37.901413869752,-122.139041773163
+"271","997, Paulson, CA, 94549","Cassandra","Taylor",NA,"Lafayette110",10,37.8907534878765,-122.150479739254
+"272","993, Paulson, CA, 94549","Drew","Bishoptsai",NA,"Lafayette110",10,37.8907444636294,-122.150425217761
+"273","474, Peacock, CA, 94549","Nicholas","Stephen",NA,"Lafayette106",8,37.866445244898,-122.10758044898
+"274","3949, Peardale, CA, 94549","Caryn","Javinsky",NA,"Lafayette105",10,37.8978321375451,-122.149298243104
+"275","3959, Peardale, CA, 94549","Kylie","Walker",NA,"Lafayette105",10,37.8976846815273,-122.14992911005
+"276","3969, Peardale, CA, 94549","Jonathan","Choi",NA,"Lafayette105",10,37.897069058738,-122.149739936275
+"277","3977, Peardale, CA, 94549","Ethan","Hall",NA,"Lafayette105",8,37.8965424231178,-122.149663931645
+"278","3972, Peardale, CA, 94549","Erin","Rudwall",NA,"Lafayette105",10,37.8971115251794,-122.150008316034
+"279","3958, Peardale, CA, 94549","Alanis","Morissette",NA,"Lafayette105",8,37.8979057668089,-122.14999134007
+"280","3946, Peardale, CA, 94549","Mark","Jewell",NA,"Lafayette105",10,37.8980017415793,-122.149239624813
+"281","3925, Peardale, CA, 94549","Stacey","Hastings",NA,"Lafayette105",10,37.8971605604027,-122.147881417785
+"282","3989, Peardale, CA, 94549","William","Cronk",NA,"Lafayette105",10,37.896147554274,-122.150239479274
+"283","3595, Powell, CA, 94549","Michael","Hansen",NA,"Lafayette107",10,37.8792531506103,-122.123310973392
+"284","3600, Powell, CA, 94549","Nestor","Toro",NA,"Lafayette107",8,37.8795366428183,-122.123391840249
+"285","3615, Powell, CA, 94549","Rachel","Gabbay",NA,"Lafayette107",8,37.8795244544453,-122.123680855405
+"286","3603, Powell, CA, 94549","Margaret","Rossell",NA,"Lafayette107",8,37.8793617530512,-122.12345886696
+"287","3840, Quail Ridge, CA, 94549","Mabel","Renas",NA,"Lafayette105",8,37.8992643570162,-122.138322999182
+"288","3882, Quail Ridge, CA, 94549","Stephan","Choulos",NA,"Lafayette105",8,37.8986628326781,-122.139535970049
+"289","3948, Quail Ridge, CA, 94549","Shana","Smith",NA,"Lafayette105",10,37.898701,-122.143008745228
+"290","3966, Quail Ridge, CA, 94549","Maia","Pecher",NA,"Lafayette105",8,37.8986896901788,-122.143102389377
+"291","3797, Quail Ridge, CA, 94549","Caroline","Lau",NA,"Lafayette105",10,37.8986384685736,-122.136938443304
+"292","3827, Quail Ridge, CA, 94549","Jase","Lim",NA,"Lafayette105",10,37.8989336577887,-122.137896116937
+"293","1094, Rahara, CA, 94549","Melissa","Obrien",NA,"Lafayette105",8,37.897178,-122.15201
+"294","1089, Rahara, CA, 94549","Ryann","Drue",NA,"Lafayette105",8,37.897116,-122.152203
+"295","1111, Rahara, CA, 94549","David","Newman",NA,"Lafayette105",10,37.8976932997994,-122.152486757036
+"296","1494, Rancho View, CA, 94549","Vishaal","Agartha",NA,"Lafayette111",8,37.9184857534485,-122.101474347865
+"297","1493, Rancho View, CA, 94549","Stacy","Yokoyama",NA,"Lafayette111",10,37.9175369766101,-122.102403756822
+"298","1364, Reliez Valley, CA, 94549","Katelyn","Dunphy",NA,"Lafayette111",8,37.9126051391207,-122.102244821852
+"299","1410, Reliez Valley, CA, 94549","Samuel","Wasserstein",NA,"Lafayette111",10,37.918103656925,-122.106470656925
+"300","1424, Reliez Valley, CA, 94549","Livier","Cisneros",NA,"Lafayette111",10,37.9181345401437,-122.106500896481
+"301","1355, Reliez Valley, CA, 94549","Paul","Clemmons",NA,"Lafayette111",17,37.9125233093088,-122.102434009922
+"302","1473, Reliez Valley, CA, 94549","Christopher","Patty",NA,"Lafayette111",10,37.9176993495687,-122.105830472406
+"303","854, Revere, CA, 94549","Robert","Ebe",NA,"Lafayette110",10,37.8850669652108,-122.158909090452
+"304","864, Revere, CA, 94549","Lori","Peracchi",NA,"Lafayette110",10,37.8851492326146,-122.158766050939
+"305","964, Risa, CA, 94549","Julian","Hechinger",NA,"Lafayette110",8,37.8892721150573,-122.135300410705
+"306","3518, Rowe, CA, 94549","Matthew","Bernstein",NA,"Lafayette107",10,37.8846966938776,-122.117897816327
+"307","1339, San Reliez, CA, 94549","Luke","Miles",NA,"Lafayette111",10,37.9082685421717,-122.103055071462
+"308","1078, Serrano, CA, 94549","Lisa","Ryan",NA,"Lafayette112",17,37.8971404456122,-122.116462922753
+"309","1065, Serrano, CA, 94549","Virdel","Bicomong",NA,"Lafayette112",8,37.8969055650388,-122.11624341707
+"310","1071, Serrano, CA, 94549","Dallas","McClung",NA,"Lafayette112",10,37.8969464735043,-122.116336675608
+"311","10, Sessions, CA, 94549","Concetta","Sardo",NA,"Lafayette112",10,37.902462,-122.113906
+"312","7, Sessions, CA, 94549","Lauryn","Ackley",NA,"Lafayette112",8,37.9017229085028,-122.115088274261
+"313","835, Sibert, CA, 94549","Cameron","Beattie",NA,"Lafayette109",10,37.8840466650952,-122.119879186085
+"314","628, Silverado, CA, 94549","Michelle","Lewis",NA,"Lafayette107",8,37.871057,-122.100007
+"315","600, Sky Hy, CA, 94549","Shawna","Briggs Puljiz",NA,"Lafayette107",8,37.873683,-122.119875
+"316","608, Sky Hy, CA, 94549","Dean","Ruskin",NA,"Lafayette107",10,37.8754797268088,-122.120340045107
+"317","639, Sky Hy, CA, 94549","David","Kaplan",NA,"Lafayette107",10,37.875088,-122.118879
+"318","673, Sky Hy, CA, 94549","Rachel","Heckle",NA,"Lafayette107",8,37.8752926767392,-122.120102304928
+"319","826, Skywood, CA, 94549","Jenna","Stedman",NA,"Lafayette107",10,37.8825541888486,-122.109051568871
+"320","790, Solana, CA, 94549","Christopher","Williams",NA,"Lafayette107",8,37.8807793894835,-122.116498664167
+"321","794, Solana, CA, 94549","Patricia","Ackdoe",NA,"Lafayette107",10,37.8808116947418,-122.116596832084
+"322","818, Solana, CA, 94549","Colin","Mannex",NA,"Lafayette107",8,37.882083,-122.114095
+"323","824, Solana, CA, 94549","Margaret","Yang",NA,"Lafayette107",8,37.8825189920987,-122.113986596572
+"324","854, Solana, CA, 94549","Lorin","Platto",NA,"Lafayette107",8,37.8836026580695,-122.116151591943
+"325","860, Solana, CA, 94549","Eunice","Flynnperrault",NA,"Lafayette107",17,37.884024,-122.116389
+"326","741, Solana, CA, 94549","Catherine","Pretti",NA,"Lafayette107",8,37.8802699909832,-122.115357064707
+"327","811, Solana, CA, 94549","Laura","Newhart",NA,"Lafayette107",10,37.8813755884157,-122.114879376482
+"328","835, Solana, CA, 94549","Hannah","Withers",NA,"Lafayette107",10,37.883086,-122.115101
+"329","845, Solana, CA, 94549","Melia","Andnins",NA,"Lafayette107",8,37.8832564923216,-122.115724562689
+"330","3440, Solana, CA, 94549","Neyaz","Felts",NA,"Lafayette107",10,37.8797824750367,-122.113100788802
+"331","3310, Springhill, CA, 94549","Brooke","Westphal",NA,"Lafayette111",8,37.9091310437313,-122.102796052196
+"332","3354, Springhill, CA, 94549","Mike","Werner",NA,"Lafayette111",8,37.9110490122377,-122.105873765184
+"333","3370, Springhill, CA, 94549","Dievad","Vrabac",NA,"Lafayette111",8,37.9123663008786,-122.10787026283
+"334","3396, Springhill, CA, 94549","Jane","Gundacker",NA,"Lafayette111",8,37.914332,-122.1132155
+"335","3430, Springhill, CA, 94549","Jeffrey","Armstrong",NA,"Lafayette111",8,37.9143354360346,-122.113059501894
+"336","3444, Springhill, CA, 94549","Kelly","Gahagan",NA,"Lafayette111",8,37.9143749107767,-122.113104765288
+"337","3476, Springhill, CA, 94549","Rajiv","Erappa",NA,"Lafayette111",8,37.9144728958873,-122.113141693847
+"338","3333, Springhill, CA, 94549","Gulbin","Muftuogluhoeberechts",NA,"Lafayette111",10,37.9096041326933,-122.10396592799
+"339","3369, Springhill, CA, 94549","Miles","Heaton",NA,"Lafayette111",10,37.9113963314989,-122.106617187692
+"340","3379, Springhill, CA, 94549","Katie","Dawson-Roberts",NA,"Lafayette111",8,37.9118683642761,-122.107298971667
+"341","3549, Springhill, CA, 94549","Sophie","Fischman",NA,"Lafayette111",8,37.9159314528848,-122.11823459169
+"342","3498, Springhill, CA, 94549","James","Hall",NA,"Lafayette111",8,37.914548,-122.113088
+"343","3485, Springhill, CA, 94549","Stanley","Massie",NA,"Lafayette111",17,37.9136615215485,-122.113813764404
+"344","3682, Sundale, CA, 94549","Jaclyn","March",NA,"Lafayette110",8,37.8869329090909,-122.129963068182
+"345","3698, Sundale, CA, 94549","Amber","Peake",NA,"Lafayette110",8,37.8872030480612,-122.130452539736
+"346","3700, Sundale, CA, 94549","Courtney","Kelly",NA,"Lafayette110",10,37.8871618479993,-122.130571298003
+"347","3712, Sundale, CA, 94549","Taylor","Messnerschaack",NA,"Lafayette110",10,37.8872552905951,-122.131307897647
+"348","3722, Sundale, CA, 94549","Joseph","Summa",NA,"Lafayette110",10,37.8872161572763,-122.131935859407
+"349","3703, Sundale, CA, 94549","Rachel","Jeremy",NA,"Lafayette110",8,37.8870946412302,-122.130236900949
+"350","3717, Sundale, CA, 94549","Victor","Petersen",NA,"Lafayette110",8,37.8870924328337,-122.131048294229
+"351","3733, Sundale, CA, 94549","Duyen","Tran",NA,"Lafayette110",8,37.8870426604712,-122.132021889064
+"352","3749, Sundale, CA, 94549","Amy","Budahn",NA,"Lafayette110",10,37.8869575268776,-122.132993223136
+"353","3763, Sundale, CA, 94549","Lawrence","Fung",NA,"Lafayette110",8,37.8866480607933,-122.133937368982
+"354","1038, Sunnybrook, CA, 94549","Nicholas","Bohm",NA,"Lafayette105",8,37.8930253628477,-122.146688019153
+"355","1011, Sunnybrook, CA, 94549","Brian","Keyashian",NA,"Lafayette105",10,37.892838,-122.146431
+"356","1019, Sunnybrook, CA, 94549","Annalyse","Johnson",NA,"Lafayette105",8,37.8928479053502,-122.146549864203
+"357","760, Tanglewood, CA, 94549","Matthew","Fassler",NA,"Lafayette109",8,37.883353352738,-122.119711101636
+"358","875, Tanglewood, CA, 94549","Daniel","Wahl",NA,"Lafayette109",8,37.8832340784416,-122.122973127024
+"359","4030, Tilden, CA, 94549","Carolina","Marringa",NA,"Lafayette105",10,37.8942529915125,-122.152997598634
+"360","4029, Tilden, CA, 94549","Mary","Heffelfinger",NA,"Lafayette105",8,37.8940774187426,-122.152945100273
+"361","1020, Timothy, CA, 94549","Danielle","Hill",NA,"Lafayette105",8,37.893771,-122.144038
+"362","1015, Timothy, CA, 94549","Judith","Sirota",NA,"Lafayette105",8,37.893152,-122.143883
+"363","1045, Timothy, CA, 94549","Kelly","Peters",NA,"Lafayette105",8,37.8945314703046,-122.144322186432
+"364","1, Tofflemire, CA, 94549","Donna","Aragon",NA,"Lafayette110",17,37.879051,-122.12574
+"365","21, Tofflemire, CA, 94549","Shomrat","Sarkar",NA,"Lafayette110",10,37.8786506339282,-122.125720217326
+"366","761, Tofflemire, CA, 94549","Alexis","Rowell",NA,"Lafayette110",8,37.8785259,-122.1252488
+"367","1, Tolan, CA, 94549","Lauren","Brasch",NA,"Lafayette105",8,37.90442,-122.157961
+"368","9, Topper, CA, 94549","Luke","Masri",NA,"Lafayette107",10,37.8867767692308,-122.112100307692
+"369","11, Topper, CA, 94549","Devon","Kufske",NA,"Lafayette107",8,37.8867804615385,-122.112097384615
+"370","1050, Upper Happy Valley, CA, 94549","Lindsey","Logan",NA,"Lafayette105",10,37.894725960288,-122.151273572676
+"371","1098, Upper Happy Valley, CA, 94549","Courtney","Sheldon",NA,"Lafayette105",8,37.8975785969807,-122.150752330166
+"372","1176, Upper Happy Valley, CA, 94549","Saima","Haq",NA,"Lafayette105",8,37.902337,-122.150968
+"373","1178, Upper Happy Valley, CA, 94549","Madelyn","Kolin",NA,"Lafayette105",10,37.90276,-122.15145
+"374","1248, Upper Happy Valley, CA, 94549","Michelle","Chew",NA,"Lafayette105",8,37.9047066285945,-122.152933469223
+"375","1033, Upper Happy Valley, CA, 94549","Wagahta","Semere",NA,"Lafayette105",10,37.8940897368421,-122.151440236842
+"376","1115, Upper Happy Valley, CA, 94549","Edward","Min",NA,"Lafayette105",10,37.8991716363636,-122.150982454545
+"377","1123, Upper Happy Valley, CA, 94549","Sindhu","Rudianto",NA,"Lafayette105",8,37.899656,-122.150989
+"378","1135, Upper Happy Valley, CA, 94549","Emily","Scadden",NA,"Lafayette105",8,37.900479,-122.151
+"379","1141, Upper Happy Valley, CA, 94549","Yui","Ng",NA,"Lafayette105",8,37.900793,-122.151004
+"380","1207, Upper Happy Valley, CA, 94549","Lissette","Arias",NA,"Lafayette105",8,37.9027895,-122.15312125
+"381","1217, Upper Happy Valley, CA, 94549","Anika","Buckley",NA,"Lafayette105",10,37.9033689957,-122.153119899928
+"382","4030, Valente, CA, 94549","Andrew","Kriozere",NA,"Lafayette110",10,37.887708,-122.153498
+"383","1140, Vallecito, CA, 94549","Rose","Fates",NA,"Lafayette105",8,37.9001644667036,-122.147098112165
+"384","1160, Vallecito, CA, 94549","Samuel","Crossley",NA,"Lafayette105",10,37.901216,-122.147263
+"385","4, Valley High, CA, 94549","Emily","Tamkin",NA,"Lafayette105",10,37.9083582,-122.1550676
+"386","3280, Vals, CA, 94549","Charles","Buderi",NA,"Lafayette111",8,37.9098244268214,-122.10113431118
+"387","3286, Vals, CA, 94549","Karen","Jarrell",NA,"Lafayette111",17,37.909596,-122.101551
+"388","3290, Vals, CA, 94549","Katherine","Bishopp",NA,"Lafayette111",8,37.9095853322726,-122.101637994022
+"389","3273, Vals, CA, 94549","Matthew","Heaton",NA,"Lafayette111",10,37.9096780873232,-122.101035837828
+"390","3277, Vals, CA, 94549","Mary","Andrews",NA,"Lafayette111",10,37.909572,-122.101215
+"391","1070, Via Baja, CA, 94549","Jenny","Chong",NA,"Lafayette105",10,37.8962337061677,-122.13553115467
+"392","1055, Via Baja, CA, 94549","Barrett","Moore",NA,"Lafayette105",8,37.8956379827849,-122.135255574439
+"393","1057, Via Baja, CA, 94549","Michael","Gee",NA,"Lafayette105",8,37.895693,-122.135284
+"394","1034, Via Media, CA, 94549","Kevin","Weekly",NA,"Lafayette105",8,37.8927478829105,-122.136048060026
+"395","1092, Via Media, CA, 94549","Niloufar","Mazhari",NA,"Lafayette105",10,37.8937189956356,-122.136260922208
+"396","1100, Via Media, CA, 94549","Maxine","Dorazio",NA,"Lafayette105",8,37.893963,-122.136574
+"397","1105, Via Media, CA, 94549","Aaron","Abood",NA,"Lafayette105",10,37.8938870266365,-122.136779410242
+"398","1036, Via Nueva, CA, 94549","Nicholas","Gaubert",NA,"Lafayette105",10,37.8948060808608,-122.157360353639
+"399","1031, Via Nueva, CA, 94549","Deren","Ney",NA,"Lafayette105",10,37.8948453021424,-122.157575056531
+"400","1049, Via Nueva, CA, 94549","Sheila","Sohr",NA,"Lafayette105",8,37.895114439887,-122.157446452796
+"401","1, Via Oneg, CA, 94549","Avrah","Ross",NA,"Lafayette105",10,37.895043,-122.132513
+"402","1038, Via Roble, CA, 94549","Marilyn","Chourarath",NA,"Lafayette105",8,37.893569,-122.131619
+"403","1048, Via Roble, CA, 94549","Christine","Gonzalez",NA,"Lafayette105",10,37.894172410528,-122.133177430203
+"404","1080, Vista Bella, CA, 94549","Charlotte","Varnai",NA,"Lafayette111",8,37.9067951305246,-122.112136233018
+"405","3555, Wildwood, CA, 94549","Benjamin","Wright",NA,"Lafayette109",8,37.8892755623935,-122.12093762619
+"406","4022, Woodside, CA, 94549","Jack","Tang",NA,"Lafayette110",8,37.8851059684906,-122.154809018449
+"407","3927, Woodside, CA, 94549","Chimene","Lloyd",NA,"Lafayette110",10,37.8861330526061,-122.153825939742
+"408","3933, Woodside, CA, 94549","Abeagail","Dunsmore",NA,"Lafayette110",8,37.8859967252566,-122.15382866
+"409","3957, Woodside, CA, 94549","Berna","Aksu",NA,"Lafayette110",8,37.885449789441,-122.153822150499
+"410","3350, Woodview, CA, 94549","Abigail","Lapporte",NA,"Lafayette107",10,37.8732415148405,-122.104178725267
+"411","3424, Woodview, CA, 94549","Elizabeth","Farnan",NA,"Lafayette107",8,37.8744108822859,-122.106413690324
+"412","3323, Woodview, CA, 94549","Yi","Wang",NA,"Lafayette107",10,37.8730948733282,-122.104440446121
+"413","3343, Woodview, CA, 94549","Ryan","Everly",NA,"Lafayette107",8,37.8730514045189,-122.104155965721
+"414","3387, Woodview, CA, 94549","Audrey","Glosson",NA,"Lafayette107",10,37.8729297041661,-122.10353190981
+"415","3395, Woodview, CA, 94549","Kevin","Dooley",NA,"Lafayette107",10,37.8729007489027,-122.103419922923
+"416","3411, Woodview, CA, 94549","Emily","Ganey",NA,"Lafayette107",8,37.8741563273688,-122.106672296173
+"417","3417, Woodview, CA, 94549","Mary","Edappallicherayil",NA,"Lafayette107",8,37.874240069791,-122.106655723556
+"418","3429, Woodview, CA, 94549","Mia","Travis",NA,"Lafayette107",8,37.8744077627552,-122.106623991622
