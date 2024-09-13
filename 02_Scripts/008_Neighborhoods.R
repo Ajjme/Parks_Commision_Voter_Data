@@ -186,7 +186,8 @@ EBRPD_district_2_voter_data_2 <- EBRPD_district_2_voter_data %>%
          party_category == "Democratic",
          voted_in_2020_general == "Yes",
          voted_in_2024_primary == "Yes",
-         voted_vs_opportunities >= .6)
+         str_detect(most_recent_precinct, "SARA102|SARA104|SARA801|LFET108|WLCR129|WLCR130|WLCR127")
+         )
 
 
 # Assuming your data frame is named 'df' with columns: 'Street', 'City', 'State', 'Zip'
@@ -208,7 +209,7 @@ df_test <- head(df)
 geocoded_data <- df %>%
   geocode(address = full_address, method = 'osm', lat = latitude, long = longitude) 
 
-saveRDS(geocoded_data , file = "Laf_dem_2020_.6_unique.rds")
+saveRDS(geocoded_data , file = "wal_sara_2020_unique.rds")
 
 walnut_creek_lat_min <- 37.88
 walnut_creek_lat_max <- 37.95
@@ -242,9 +243,9 @@ dot_map <- leaflet(data = walnut_creek_df) %>%
   )
 # Save the map to an HTML file
 library(htmlwidgets)
-saveWidget(dot_map, file = "dot_walnut_creek_Hover.html")
+saveWidget(dot_map, file = "dot_walnut_creek_SARANAP_Hover.html")
 
-write.csv(lafayette_df, "walnut_creek_addresses.csv")
+write.csv(walnut_creek_df, "walnut_creek_SARANAP_addresses.csv")
 
 
 
