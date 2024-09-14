@@ -248,11 +248,80 @@ saveWidget(dot_map, file = "dot_walnut_creek_SARANAP_Hover.html")
 write.csv(walnut_creek_df, "walnut_creek_SARANAP_addresses.csv")
 
 
+###################
+
+#Emeryville and berkely hills!
+
+desired_levels <- c( "80-90%", "90-100%") #"70-80%", "80-90%",
+EBRPD_district_2_voter_data <- readRDS("EBRPD_district_2_voter_data.rds")
+
+EBRPD_district_2_voter_data_2 <- EBRPD_district_2_voter_data %>% 
+  rename(party_category = Party_Category) %>% 
+  mutate(voted_in_2016_general = case_when(x52_11_08_2016_2016_general_election_127_eligibility == "V" ~ "Yes",
+                                           x52_11_08_2016_2016_general_election_127_eligibility == "A" ~ "Yes",
+                                           x52_11_08_2016_2016_general_election_127_eligibility == "N" ~ "No",
+                                           TRUE ~ "not eligable")) %>% 
+  filter(#str_detect(precinct_name, "WalnutCreek"), #saranapp (walnut Creek) (Lafayette) - Oakland Piedmont Onthclair
+         str_detect(mail_city, "BER"),
+                    #mail_city == "EMERYVILLE",
+         party_category == "Democratic",
+         voted_in_2020_general == "Yes",
+         voted_in_2024_primary == "Yes"
+         #str_detect(most_recent_precinct, "SARA102|SARA104|SARA801|LFET108|WLCR129|WLCR130|WLCR127")
+  )
 
 
+# Assuming your data frame is named 'df' with columns: 'Street', 'City', 'State', 'Zip'
+# Create a full address column
+df <- EBRPD_district_2_voter_data_2 %>%
+  mutate(mail_zip = substr(mail_zip, 1, 5))%>%
+  #select(-full_address) %>% 
+  #only for mapping
+  mutate(mail_street = gsub("\\s+\\d+$", "", mail_street)) %>%
+  mutate(full_address = paste(house_number, mail_street, mail_state, mail_zip, sep = ", ")) %>% 
+  filter(!str_detect(mail_street, "PO BOX"), 
+         mail_state == "CA" ) %>% 
+  distinct(full_address, .keep_all = TRUE) %>% 
+  arrange(mail_street, mail_zip) %>% 
+  select(full_address,name_first,name_last,last_voted,precinct_name,voting_opportunities)
 
+df_test <- head(df)
+# Geocode the addresses
+geocoded_data <- df %>%
+  geocode(address = full_address, method = 'osm', lat = latitude, long = longitude) 
 
+saveRDS(geocoded_data , file = "EMERYVILLE_2020_unique.rds")
 
+emeryville_lat_min <- 37.82
+emeryville_lat_max <- 37.85
+emeryville_long_min <- -122.31
+emeryville_long_max <- -122.27
+
+# Filter the data frame using dplyr
+df <- geocoded_data
+emeryville_df <- df %>%
+  filter(latitude >= emeryville_lat_min, latitude <= emeryville_lat_max,
+         longitude >= emeryville_long_min, longitude <= emeryville_long_max)
+
+# Filter the data frame using dplyr
+# Filter the data frame to only include rows within the Moraga boundaries
+
+###----------------
+
+dot_map <- leaflet(data = geocoded_data) %>%
+  addTiles() %>%
+  addCircleMarkers(
+    lng = ~longitude, 
+    lat = ~latitude, 
+    radius = 2, 
+    color = "blue", 
+    fillOpacity = 0.6,
+    label = ~full_address,  # Add label to show full address on hover
+    labelOptions = labelOptions(
+      noHide = FALSE,
+      direction = "auto"
+    )
+  )
 
 
 ### Archive ----------------------
