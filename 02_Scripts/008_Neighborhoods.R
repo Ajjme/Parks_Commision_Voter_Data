@@ -211,13 +211,14 @@ geocoded_data <- df %>%
 
 saveRDS(geocoded_data , file = "wal_sara_2020_unique.rds")
 
-walnut_creek_lat_min <- 37.88
-walnut_creek_lat_max <- 37.95
-walnut_creek_long_min <- -122.10
-walnut_creek_long_max <- -122.03
+wal <- readRDS(file = "wal_sara_2020_unique.rds")
+walnut_creek_lat_min <- 37.7
+walnut_creek_lat_max <- 37.9
+walnut_creek_long_min <- -122.2
+walnut_creek_long_max <- -122.0
 
 # Filter the data frame using dplyr
-df <- geocoded_data
+df <- wal
 walnut_creek_df <- df %>%
   filter(latitude >= walnut_creek_lat_min, latitude <= walnut_creek_lat_max,
          longitude >= walnut_creek_long_min, longitude <= walnut_creek_long_max)
@@ -241,11 +242,12 @@ dot_map <- leaflet(data = walnut_creek_df) %>%
       direction = "auto"
     )
   )
+dot_map
 # Save the map to an HTML file
 library(htmlwidgets)
-saveWidget(dot_map, file = "dot_walnut_creek_SARANAP_Hover.html")
+saveWidget(dot_map, file = "dot_walnut_creek_Roosmore_Hover.html")
 
-write.csv(walnut_creek_df, "walnut_creek_SARANAP_addresses.csv")
+write.csv(walnut_creek_df, "walnut_creek_Roosmore_addresses.csv")
 
 
 ###################
