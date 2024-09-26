@@ -35,8 +35,8 @@ df <- EBRPD_district_2_voter_data_2 %>%
          mail_state == "CA" ) %>% 
   distinct(full_address, .keep_all = TRUE) %>% 
   arrange(mail_street, mail_zip) %>% 
-  select(full_address,party, name_first,name_last,last_voted,precinct_name,voted_vs_opportunities_group) %>% 
-  arrange(party, voted_vs_opportunities_group)
+  select(full_address,apartment_number, house_number, party, name_first,name_last,last_voted,precinct_name,voted_vs_opportunities_group) %>% 
+  arrange(house_number, full_address, apartment_number)
 
-write.csv(df, "RHEEM_clean_distinct.csv")
-write.csv(EBRPD_district_2_voter_data_2, "RHEEM_all_info.csv")
+write.csv(df, "RHEEM_clean_distinct_2.csv")
+write.csv(EBRPD_district_2_voter_data_2, "RHEEM_all_info_2.csv")
