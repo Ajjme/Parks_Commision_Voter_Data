@@ -11,7 +11,8 @@ ala_data <- readRDS("alameda_processed_voter_data.rds") %>%
 ccc_data <- readRDS("contra_costa_processed_voter_data.rds") %>%
   mutate(most_recent_precinct = as.character(most_recent_precinct),
          mail_zip = as.character(mail_zip),
-         phone_1 = as.character(phone_1))
+         phone_1 = as.character(phone_1),
+         mail_street = paste(mail_street, s_street_suffix))
 #summary_by_mail_ccc <- count_unique_voters(ccc_data, percent_voted_by_mail)
 
 EBRPD_district_2_voter_data <- bind_rows(ala_data, ccc_data) %>% 

@@ -72,28 +72,50 @@ low_levels <- c(  "0-10%", "10-20%", "20-30%")
 
 first_mailer <- EBRPD_district_2_voter_data %>% 
   filter(
-    #party_category == "Democratic",
+    party_category == "Democratic",
     #      voted_vs_opportunities_group %in% desired_levels,
-     percent_voted_by_mail_group %in% desired_levels,
+     #percent_voted_by_mail_group %in% desired_levels,
+     #!str_detect(mail_street, "PO Box"),
 
     #      recently_updated == "Yes",
     # count_times_voted >= "2"
-    voted_in_2020_general == "Yes" #&#, 88,459
-    # voted_in_2016_general == "Yes",
-    # voted_in_2024_primary == "Yes" &
+    voted_in_2020_general == "Yes" ,#&#, 88,459
+     #voted_in_2016_general == "Yes"
+    voted_in_2024_primary == "Yes" 
      # voted_in_2016_general == "Yes" #75,400 add people that voted in 2020 genral and not in 2024 - as or
          ) %>%
   mutate(
-    full_address = case_when(
-      !str_detect(mail_street, "[0-9]") ~ paste(house_number, mail_street, mail_city, mail_zip, sep = " "),
-      str_detect(mail_street, "[0-9]") ~ paste(mail_street, mail_city, mail_zip, sep = " ")
+    Address1 = case_when(
+      str_detect(mail_street, "PO BOX") ~ paste(mail_street, sep = " "),  # Keep Po Box with numbers
+      !str_detect(mail_street, "[0-9]") ~ paste(house_number, mail_street, sep = " "),
+      str_detect(mail_street, "[0-9]") ~ paste(str_replace(mail_street, "\\s*[0-9]+$", ""), sep = " ")  # Remove number at the end
     ),
-    full_address = ifelse(!is.na(apartment_number) & apartment_number != "", 
-                          paste(full_address, "Apartment", apartment_number, sep = " "), 
-                          full_address),
-    name_first = str_to_title(name_first),
-    name_last = str_to_title(name_last)
-  ) %>% 
+    Address1 = ifelse(!is.na(apartment_number) & apartment_number != "", 
+                      paste(Address1, "Apartment", apartment_number, sep = " "), 
+                      Address1),
+    # Address1 = case_when(
+    #   !str_detect(mail_street, "[0-9]") ~ paste(house_number, mail_street, sep = " "),
+    #   str_detect(mail_street, "[0-9]") ~ paste(mail_street, sep = " "),
+    #   
+    # # full_address = case_when(
+    # #   !str_detect(mail_street, "[0-9]") ~ paste(house_number, mail_street, mail_city, mail_zip, sep = " "),
+    # #   str_detect(mail_street, "[0-9]") ~ paste(mail_street, mail_city, mail_zip, sep = " ")
+    # ),
+    # Address1 = ifelse(!is.na(apartment_number) & apartment_number != "", 
+    #                       paste(Address1, "Apartment", apartment_number, sep = " "), 
+    #                       Address1),
+    First = str_to_title(name_first),
+    Last = str_to_title(name_last),
+    Address1 = str_to_title(Address1),
+    Address2 = "",
+    Address2 = str_to_title(Address2),
+    City = str_to_title(mail_city),
+    State = "CA",
+    Zip = substr(as.character(mail_zip), 1, 5),
+    County = case_when(
+      str_detect(most_recent_precinct, "[A-Za-z]") ~ "Contra Costa",
+      TRUE ~ "Alameda"
+    )) %>% 
   select(-c(#percent_voted_by_mail, 
             percent_voted_by_primary, count_times_voted,
             voting_opportunities, voted_vs_opportunities, voted_in_2024_primary,
@@ -107,26 +129,25 @@ first_mailer <- EBRPD_district_2_voter_data %>%
             birth_date, ltd, language,
             house_number, apartment_number)) %>%
   #filter(!is.na(phone_1)) %>% 
-  select("voter_id"              ,                                                 
-         "most_recent_precinct"  ,                                                 
-         "name_prefix"           ,                                                 
-         "name_last"             ,                                                 
-         "name_first"            ,                                                 
-         full_address,                                                
-         #"phone_1"               ,
-         email,
-          #"party"                ,
-          birth_year_group, party_category, percent_voted_by_mail_group) #%>% 
+  select("First"             ,                                                 
+         "Last"            ,   
+         Address1,
+         Address2,
+         City,
+         State,
+         Zip,
+         County) %>% 
+  distinct(Address1, .keep_all = TRUE)#%>% 
   # mutate(clean_phone = gsub("[^0-9]", "", phone_1) %>%  # Remove non-numeric characters
   #                 str_sub(-10))
 # %>%
 #   distinct(full_address, .keep_all = TRUE)
   
-summary_by_mail <- count_unique_voters(first_mailer, percent_voted_by_mail_group)
+summary_by_mail <- count_unique_voters(first_mailer, County)
    
-saveRDS(first_mailer, file = "56679_mailer.rds")
+saveRDS(first_mailer, file = "Dem_recent_voters_mailer.rds")
 
-write.csv(first_mailer,"56679_mailer.csv")
+write.csv(first_mailer,"Dem_recent_voters_mailer.csv")
 #Include when voted did they vote by mail
 
 # goal best 50,000
