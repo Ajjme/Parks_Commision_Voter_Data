@@ -72,15 +72,14 @@ low_levels <- c(  "0-10%", "10-20%", "20-30%")
 
 first_mailer <- EBRPD_district_2_voter_data %>% 
   filter(
-    party_category == "Democratic",
-    #      voted_vs_opportunities_group %in% desired_levels,
+    party_category == "Democratic" &
+          #voted_vs_opportunities_group %in% desired_levels,
      #percent_voted_by_mail_group %in% desired_levels,
      #!str_detect(mail_street, "PO Box"),
 
     #      recently_updated == "Yes",
-    # count_times_voted >= "2"
-    voted_in_2020_general == "Yes" ,#&#, 88,459
-     #voted_in_2016_general == "Yes"
+    count_times_voted >= "2" &
+    voted_in_2020_general == "Yes" &#&#, 88,459
     voted_in_2024_primary == "Yes" 
      # voted_in_2016_general == "Yes" #75,400 add people that voted in 2020 genral and not in 2024 - as or
          ) %>%
@@ -116,6 +115,7 @@ first_mailer <- EBRPD_district_2_voter_data %>%
       str_detect(most_recent_precinct, "[A-Za-z]") ~ "Contra Costa",
       TRUE ~ "Alameda"
     )) %>% 
+  filter(str_detect(City, "nut")) %>% 
   select(-c(#percent_voted_by_mail, 
             percent_voted_by_primary, count_times_voted,
             voting_opportunities, voted_vs_opportunities, voted_in_2024_primary,
@@ -145,9 +145,9 @@ first_mailer <- EBRPD_district_2_voter_data %>%
   
 summary_by_mail <- count_unique_voters(first_mailer, County)
    
-saveRDS(first_mailer, file = "Dem_recent_voters_mailer.rds")
+saveRDS(first_mailer, file = "Walnut_Dem_recent_voters_mailer.rds")
 
-write.csv(first_mailer,"Dem_recent_voters_mailer.csv")
+write.csv(first_mailer,"Walnut_Dem_recent_voters_mailer.csv")
 #Include when voted did they vote by mail
 
 # goal best 50,000
