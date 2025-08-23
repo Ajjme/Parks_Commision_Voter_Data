@@ -116,6 +116,8 @@ first_mailer <- EBRPD_district_2_voter_data %>%
       TRUE ~ "Alameda"
     )) %>% 
   filter(str_detect(City, "nut")) %>% 
+  
+  mutate(full_address = paste( mail_street, mail_state, mail_zip, sep = ", ")) %>% 
   select(-c(#percent_voted_by_mail, 
             percent_voted_by_primary, count_times_voted,
             voting_opportunities, voted_vs_opportunities, voted_in_2024_primary,
@@ -133,6 +135,7 @@ first_mailer <- EBRPD_district_2_voter_data %>%
          "Last"            ,   
          Address1,
          Address2,
+         full_address,
          City,
          State,
          Zip,
@@ -142,12 +145,47 @@ first_mailer <- EBRPD_district_2_voter_data %>%
   #                 str_sub(-10))
 # %>%
 #   distinct(full_address, .keep_all = TRUE)
+geocoded_data <- first_mailer %>%
+  geocode(address = full_address, method = 'osm', lat = latitude, long = longitude) 
+saveRDS(geocoded_data ,"walnut test.rds")
+
+####
+#Map
+
+moraga_lat_min <- 37.9
+moraga_lat_max <- 37.95
+moraga_long_min <- -122.1
+moraga_long_max <- -122.067
+
+# Filter the data frame using dplyr
+# Filter the data frame to only include rows within the Moraga boundaries
+df <- geocoded_data
+wal_df <- df[df$latitude >= moraga_lat_min & df$latitude <= moraga_lat_max & 
+                  df$longitude >= moraga_long_min & df$longitude <= moraga_long_max, ]
+
+
+dot_map <- leaflet(data = wal_df) %>%
+  addTiles() %>%
+  addCircleMarkers(
+    lng = ~longitude, 
+    lat = ~latitude, 
+    radius = 2, 
+    color = "blue", 
+    fillOpacity = 0.6,
+    label = ~full_address,  # Add label to show full address on hover
+    labelOptions = labelOptions(
+      noHide = FALSE,
+      direction = "auto"
+    )
+  )
+dot_map
   
 summary_by_mail <- count_unique_voters(first_mailer, County)
    
-saveRDS(first_mailer, file = "Walnut_Dem_recent_voters_mailer.rds")
+saveRDS(first_mailer, file = "1083_Walnut_Dem_recent_voters_mailer.rds")
 
-write.csv(first_mailer,"Walnut_Dem_recent_voters_mailer.csv")
+write.csv(wal_df,"1083_Walnut_Dem_recent_voters_mailer.csv")
+saveWidget(dot_map, file = "1083_Walnut_Dem_recent_voters_mailer.html")
 #Include when voted did they vote by mail
 
 # goal best 50,000
